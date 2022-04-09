@@ -11,7 +11,7 @@ body{
 }
 
 nav{
-    background-color: rgb(1, 204, 136);
+    background-color: #459c98;
     height: 60px;
     width: 100%;
 }
@@ -44,7 +44,7 @@ nav ul li a{
 }
 
 a.active, a:hover{
-    background-color: rgb(0, 180, 120);
+    background-color: #ef8cc8;
     transition: 0.5s;
 }
 
@@ -71,9 +71,10 @@ li.dropdown{
 }
 
 .dropdown-content{
+    margin-top: -0.5px;
     display: none;
     position: fixed;
-    background-color: rgb(1, 204, 136);
+    background-color: #459c98;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -88,7 +89,34 @@ li.dropdown{
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
+}
+
+input[type=text] {
+    padding: 5px;
+    font-size: 17px;
+    width: 400px;
+    border: none;
+    border-radius: 20px 0px 0px 20px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.5s;
+    font-family: serif;
+    color: rgb(90, 90, 90);
+}
+
+.search-container button {
+    margin-left: -3.1px;
+    padding: 6.5px 6px 5.8px 6px;
+    width: 50px;
+    background: #ef8cc8;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 20px 20px 0px;
+    font-family: serif;
 }
 
 @media (max-width: 990px){
@@ -108,7 +136,7 @@ li.dropdown{
     ul{
         position: fixed;
         width: 100%;
-        background: rgb(1, 204, 136);
+        background: #459c98;
         top: 60px;
         top: -100%;
         z-index: -1;
@@ -123,7 +151,7 @@ li.dropdown{
     }
     a:hover, a.active{
         background-color: none;
-        color: green;
+        color: #12736e;
     }
     .logo:hover{
         background-color: inherit;
@@ -138,4 +166,104 @@ li.dropdown{
     .dropdown-content{
         display: none;
     }
+}
+
+/* ------------------------------------------------------------------------------- */
+
+* {
+    box-sizing:border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 95%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next, .prev1, .next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-size: xx-large;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev1, .next1 {
+    color: black;
+    font-size: xx-large;
+}
+
+.prev1{
+    left: 2px;
+}
+
+/* Position the "next button" to the right */
+.next, .next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
