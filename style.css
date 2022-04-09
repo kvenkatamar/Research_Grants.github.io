@@ -91,11 +91,6 @@ li.dropdown{
   display: block;
 }
 
-main{
-    position: absolute;
-    top: 60px;
-}
-
 @media (max-width: 990px){
     .logo{
         font-size: 30px;
