@@ -21,7 +21,9 @@ nav{
     font-size: 35px;
     font-weight: bold;
     line-height: 60px;
-    padding: 0 100px;
+    padding: 0 50px;
+    position: absolute;
+    z-index: 2;
 }
 
 nav ul{
@@ -53,13 +55,15 @@ a.active, a:hover{
 }
 
 .checkbtn{
-    float: right;
     font-size: 30px;
     line-height: 60px;
     color: white;
     margin-right: 40px;
     cursor: pointer;
     display: none;
+    position: absolute;
+    right: 0;
+    z-index: 2;
 }
 
 #check{
@@ -134,12 +138,12 @@ input[type=text] {
         display: block;
     }
     ul{
-        position: fixed;
+        position: absolute;
         width: 100%;
         background: #459c98;
         top: 60px;
         top: -100%;
-        z-index: -1;
+        z-index: 1;
         text-align: center;
         transition: all .5s;
     }
@@ -175,6 +179,7 @@ input[type=text] {
     margin: auto;
     padding: 20px;
     padding-left: 0px;
+    z-index: -2;
 }
 
 /* Slideshow container */
@@ -194,34 +199,30 @@ input[type=text] {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  margin-top: -22px;
+  margin-top: -40px;
   padding: 16px;
   color: white;
   font-size: xx-large;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 10px 10px 0;
   user-select: none;
-}
-
-.prev1, .next1 {
-    color: black;
-    font-size: xx-large;
-}
-
-.prev1{
-    left: 2px;
 }
 
 /* Position the "next button" to the right */
 .next, .next1 {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 10px 0 0 10px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+/* Position the "alternate buttons" slightly moved from the actual position */
+.prev1{
+    color: black;
+    padding-left: 12px;
+}
+
+.next1{
+    color: black;
+    padding-right: 12px;
 }
 
 /* Caption text */
@@ -233,6 +234,7 @@ input[type=text] {
   bottom: 8px;
   width: 100%;
   text-align: center;
+  background-color: rgb(88, 87, 87, 0.5);
 }
 
 /* Number text (1/3 etc) */
@@ -267,6 +269,6 @@ input[type=text] {
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: 0.4}
   to {opacity: 1}
 }
