@@ -164,7 +164,7 @@ input[type=text] {
     }
     a:hover, a.active{
         background-color: none;
-        color: #12736e;
+        color: #ffffff;
     }
     .logo:hover{
         background-color: inherit;
