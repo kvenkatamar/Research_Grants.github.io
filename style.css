@@ -163,7 +163,6 @@ input[type=text] {
         font-size: 20px;
     }
     a:hover, a.active{
-        background-color: none;
         color: #ffffff;
     }
     .logo:hover{
