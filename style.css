@@ -394,20 +394,50 @@ h3{
 
 @media(max-width: 835px){
     #footer .follow{
-        top: 90px;
+        top: 60px;
     }
     .follow h3{
         margin-left: -35px;
     }
 }
 
-@media(max-width: 600px){
+@media(max-width: 500px){
     #footer{
         position: static;
     }
 
     #footer .follow{
         position: static;
-        width: 100%;
+        padding-bottom: 0px;
+    }
+
+    #footer .follow ul{
+        position: relative;
+        top: -30px;
+        bottom: -50px;
+        left: 25px;
+    }
+}
+
+@media(max-width: 300px){
+    .contact{
+        padding: 30px 10px;
+    }
+    
+    h3{
+        font-size: 18px;
+    }
+    
+    #footer #row1,
+    #footer #row2{
+        font-size: 13px;
+    }
+    
+    #icon{
+        font-size: 15px;
+        top: 2px;
+    }
+    #footer .follow ul{
+        left: 0px;
     }
 }
