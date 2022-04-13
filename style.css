@@ -40,6 +40,7 @@ nav ul li{
 nav ul li a{
     color: white;
     font-size: 15px;
+    font-weight: bolder;
     padding: 7px 13px;
     border-radius: 5px;
     text-transform: uppercase;
@@ -47,7 +48,6 @@ nav ul li a{
 
 nav ul li a.active, a:hover{
     background-color: #ef8cc8;
-    transition: 0.5s;
 }
 
 .logo:hover{
@@ -79,21 +79,35 @@ li.dropdown{
     display: none;
     position: fixed;
     background-color: #459c98;
-    min-width: 160px;
+    min-width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 0px 16px;
+    color: white;
+    padding: 10px 10px;
+    line-height: 30px;
     text-decoration: none;
     display: block;
     text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    line-height: normal;
+    border-bottom: 0.1px solid #028983;
+    border-radius: 0px;
+    transition: .5s;
+    text-transform: capitalize;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.dropdown-content a:hover{
+    padding-left: 25px;
+    background-color: #38fff5;
+    color: black;
 }
 
 input[type=text] {
