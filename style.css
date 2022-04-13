@@ -408,7 +408,7 @@ h3{
 
 @media(max-width: 835px){
     #footer .follow{
-        top: 60px;
+        top: 90px;
     }
     .follow h3{
         margin-left: -35px;
@@ -454,6 +454,17 @@ h3{
     #footer .follow ul{
         left: 0px;
     }
+    
+    #fb, #tweet{
+        font-size: 20px;
+    }
+    #footer img{
+        width: 20px;
+    }
+    .follow ul li{
+        margin-left: -40px;
+    }
+
     input[type=text] {
         width: 150px;
     }
