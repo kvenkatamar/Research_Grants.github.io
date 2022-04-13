@@ -440,4 +440,7 @@ h3{
     #footer .follow ul{
         left: 0px;
     }
+    input[type=text] {
+        width: 150px;
+    }
 }
