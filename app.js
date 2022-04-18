@@ -32,3 +32,14 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+var homeTab = () => {
+  document.querySelector(".tab-1").style.display = "block";
+  document.querySelector(".tab-2").style.display = "none";
+}
+
+var NationalTab = () => {
+  document.querySelector(".tab-1").style.display = "none";
+  document.querySelector(".tab-2").style.display = "block";
+}
