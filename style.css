@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;
     box-sizing: border-box;
 }
 
@@ -14,6 +13,7 @@ nav{
     background-color: #459c98;
     height: 60px;
     width: 100%;
+    text-decoration: none;
 }
 
 .logo{
@@ -24,6 +24,7 @@ nav{
     padding: 0 25px;
     position: absolute;
     z-index: 2;
+    text-decoration: none;
 }
 
 nav ul{
@@ -44,6 +45,7 @@ nav ul li a{
     padding: 7px 13px;
     border-radius: 5px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 nav ul li a.active, a:hover{
@@ -137,68 +139,7 @@ input[type=text] {
     font-family: serif;
 }
 
-@media (max-width: 1330px){
-    .logo{
-        font-size: 30px;
-        padding: 0px 10px;
-    }
-    nav ul li a{
-        font-size: 12px;
-    }
-    nav ul li{
-        margin: 0px 2px;
-    }
-    nav ul li a{
-        padding: 5px 5px;
-    }    
-    input[type=text]{
-        width: 200px;
-    }
-}
-
-
-/* MEDIA QUERY */
-
-@media (max-width: 835px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: absolute;
-        width: 100%;
-        background: #459c98;
-        top: 60px;
-        top: -100%;
-        z-index: 1;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    a:hover, a.active{
-        color: white;
-    }
-    .logo:hover{
-        background-color: inherit;
-        color: white;
-    }
-    #check:checked ~ ul{
-        top: 60px;
-    }
-    li.dropdown{
-        display: block;
-    }
-    .dropdown-content{
-        display: none;
-    }
-}
-
-
-/* ------------------------------------------------------------------------------- */
+/* -------------------------------SLIDE SHOW------------------------------------------------ */
 
 h1{
     width: 95%;
@@ -302,26 +243,14 @@ h1{
 
 /* ------------------------------------------FOOTER------------------------------------------------------------------ */
 
-/* .contact{
-    float: right;
-}
-
-.social-media{
-    display: inline-block;
-}
- */
-
 #footer{
     color: white;
     background-color: #459c98;
-    position: relative;
 }
 
-
 .contact{
+    float: right;
     padding: 30px;
-	margin-top: 50px;
-    width: 100%;
 }
 
 h3{
@@ -347,12 +276,8 @@ h3{
 }
 
 #footer .follow{
-    position: absolute;
-    right: 0px;
-    top: 0px;
+    padding-left: 0px;
     padding: 30px;  
-    padding-left: 0;
-    width: 200px;
 }
 
 .follow li{
@@ -397,6 +322,7 @@ h3{
 }
 
 .copyright{
+    clear: both;
     background: #ef8cc8;
     padding: 15px 10px;
     letter-spacing: 1px;
@@ -404,38 +330,75 @@ h3{
     text-align: center;
 }
 
-/* MEDIA QUERY */
+/* ------------------------------------------MEDIA QUERY------------------------------------------------------------------ */
 
-@media(max-width: 835px){
-    #footer .follow{
-        top: 90px;
+@media (max-width: 1330px){
+    .logo{
+        font-size: 30px;
+        padding: 0px 10px;
     }
-    .follow h3{
-        margin-left: -35px;
+    nav ul li a{
+        font-size: 12px;
+    }
+    nav ul li{
+        margin: 0px 2px;
+    }
+    nav ul li a{
+        padding: 5px 5px;
+    }    
+    input[type=text]{
+        width: 200px;
     }
 }
 
-@media(max-width: 500px){
-    #footer{
-        position: static;
+@media (max-width: 1000px){
+    .checkbtn{
+        display: block;
     }
+    nav ul{
+        position: absolute;
+        width: 100%;
+        background: #459c98;
+        top: -200%;
+        z-index: 1;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        color: white;
+    }
+    .logo:hover{
+        background-color: inherit;
+        color: white;
+    }
+    #check:checked ~ ul{
+        top: 60px;
+    }
+    li.dropdown{
+        display: block;
+    }
+    .dropdown-content{
+        display: none;
+    }
+}
 
-    #footer .follow{
-        position: static;
+@media(max-width: 600px){
+    .contact{
+        float: none;
         padding-bottom: 0px;
-    }
-
-    #footer .follow ul{
-        position: relative;
-        top: -30px;
-        bottom: -50px;
-        left: 25px;
     }
 }
 
 @media(max-width: 300px){
     .contact{
         padding: 30px 10px;
+        padding-bottom: 0px;
     }
     
     h3{
@@ -451,8 +414,9 @@ h3{
         font-size: 15px;
         top: 2px;
     }
-    #footer .follow ul{
-        left: 0px;
+
+    #footer .follow{
+        padding: 30px 10px;
     }
     
     #fb, #tweet{
@@ -460,9 +424,6 @@ h3{
     }
     #footer img{
         width: 20px;
-    }
-    .follow ul li{
-        margin-left: -40px;
     }
 
     input[type=text] {
