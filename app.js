@@ -32,3 +32,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+// ----------------------------Script to Implement SLICK SLIDER------------------------------
+
+$('.slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1500,
+});
