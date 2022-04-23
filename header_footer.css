@@ -13,7 +13,7 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
 }
 
-nav{
+.navbar{
     background-color: #459c98;
     height: 60px;
     width: 100%;
@@ -26,23 +26,28 @@ nav{
     font-weight: bold;
     line-height: 60px;
     padding: 0 25px;
+    margin: 0px;
     position: absolute;
     z-index: 2;
     text-decoration: none;
 }
 
-nav ul{
+.navbar ul{
     float: right;
-    margin-right: 20px;
+    margin: -9px 0px 0px 0px;
 }
 
-nav ul li{
+.navbar ul li{
     display: inline-block;
     line-height: 60px;
     margin: 0px 5px;
 }
 
-nav ul li a{
+.dropdown-content{
+    display: none;
+}
+
+.navbar ul li a{
     color: white;
     font-size: 15px;
     font-weight: bolder;
@@ -52,8 +57,9 @@ nav ul li a{
     text-decoration: none;
 }
 
-nav ul li a.active, a:hover{
+.navbar ul li a.active, a:hover{
     background-color: #ef8cc8;
+    color: white;
 }
 
 .logo:hover{
@@ -73,7 +79,7 @@ nav ul li a.active, a:hover{
 }
 
 #check{
-    display: none;
+    visibility: hidden;
 }
 
 li.dropdown{
@@ -81,7 +87,6 @@ li.dropdown{
 }
 
 .dropdown-content{
-    margin-top: -0.5px;
     display: none;
     position: absolute;
     background-color: #459c98;
@@ -90,7 +95,7 @@ li.dropdown{
     z-index: 1;
 }
 
-.dropdown-content a {
+.navbar .dropdown-content a {
     color: white;
     padding: 10px 10px;
     line-height: 30px;
@@ -120,27 +125,37 @@ input[type=text] {
     padding: 5px;
     font-size: 17px;
     width: 400px;
+    height: 30px;
     border: none;
     border-radius: 20px 0px 0px 20px;
     box-sizing: border-box;
     outline: none;
+    text-align: left;
     transition: 0.5s;
     font-family: serif;
     color: rgb(90, 90, 90);
 }
 
-.search-container button {
-    margin-left: -3.1px;
-    padding: 6.5px 6px 5.8px 6px;
+.button {
+    position: relative;
+    top: 15px;
+    left: -3.5px;
+    padding: 0px 6px 0px 6px;
     width: 50px;
+    height: 30px;
     background: #ef8cc8;
     color: white;
-    font-size: 15px;
-    text-transform: uppercase;
     border: none;
     cursor: pointer;
     border-radius: 0px 20px 20px 0px;
     font-family: serif;
+    margin-right: 20px;
+}
+
+.fa-search{
+    position: relative;
+    top: -15px;
+    font-size: larger;
 }
 
 
@@ -181,8 +196,8 @@ h3{
 }
 
 #footer .follow{
-    padding-left: 0px;
     padding: 30px;  
+    padding-left: 0px;
 }
 
 .follow li{
@@ -212,7 +227,7 @@ h3{
 #footer img{
     width: 40px;
     position: relative;
-    top: 4px;
+    top: -11px;
     filter: brightness(0) invert(1);
     cursor: pointer;
 }
@@ -229,10 +244,14 @@ h3{
 .copyright{
     clear: both;
     background: #ef8cc8;
-    padding: 15px 10px;
+    padding: 15px;
     letter-spacing: 1px;
     margin-bottom: 0px;
     text-align: center;
+}
+
+.copyright p{
+    margin-bottom: 0px;
 }
 
 /* ---------------------------
@@ -322,7 +341,7 @@ h3{
         top: 2px;
     }
 
-    #footer .follow{
+    #footer .follow ul{
         padding: 30px 10px;
     }
     
