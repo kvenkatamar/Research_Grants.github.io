@@ -218,7 +218,7 @@
   top: 50%;
   left: 50%;
   margin: -85px 0px 0px -75px;
-  background: #f98bcd;
+  background: #f2b1d8;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -277,7 +277,7 @@
 }
 
 .slider .slick-prev:before, .slider .slick-next:before{
-  color: #ff0099;
+  color: #025e59;
 }
 
 .slider .slick-prev:before{
