@@ -288,6 +288,14 @@
   color: #f80b0b;
 }
 
+.slider .slick-prev:before{
+  content: "\1F828";
+}
+
+.slider .slick-next:before{
+  content: "\1F82A";
+}
+
 /*-----------------------------
         MEDIA QUERY
 -------------------------------*/
