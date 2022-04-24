@@ -67,7 +67,7 @@
 
 .main-slider .slick-arrow.slick-next:before {
   font-size: 40px;
-  fill: #ffffff;
+  fill: #ffff;
   padding: 0px 10px;
   border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.868);
@@ -284,7 +284,7 @@
   background-color: transparent;
 }
 
-.slider .slick-prev:before, .slick-next:before{
+.slider .slick-prev:before, .slider .slick-next:before{
   color: #f80b0b;
 }
 
