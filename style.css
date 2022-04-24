@@ -226,16 +226,6 @@
   transition: transform 0.3s ease-in;
 }
 
-.slider .slider__item img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: #00fff2;
-  z-index: 1;
-}
-
 .slider__item:hover:before {
   transform: scaleX(3) scaleY(3) scaleZ(10);
   /* transform: scale(2); */
@@ -256,6 +246,7 @@
   border: 2px solid var(--bg-color);
   z-index: 1; 
   transition: all 0.3s ease-out;
+  position: relative;
 }
 
 .subject {
@@ -294,6 +285,13 @@
 
 .slider .slick-next:before{
   content: "\1F82A";
+}
+
+.circle img{
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*-----------------------------
