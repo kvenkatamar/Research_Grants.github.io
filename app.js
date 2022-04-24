@@ -32,7 +32,7 @@ $(document).ready(function () {
     $(".slider").slick({
       arrows: true,
       dots: false,
-      slidesToShow: 3,
+      slidesToShow: 4,
       autoplay: false,
       speed: 500,
       autoplaySpeed: 2000,
