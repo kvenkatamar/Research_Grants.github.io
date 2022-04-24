@@ -267,6 +267,27 @@
   margin: -85px 0px 0px -75px;
 }
 
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: 0px -100px 0px -80px;
+  z-index: 10;
+}
+
+.slider .slick-arrow.slick-prev:before{
+  padding: 0px;
+  background-color: transparent;
+}
+
+.slider .slick-arrow.slick-next:before{
+  padding: 0px;
+  background-color: transparent;
+}
+
+.slider .slick-prev:before, .slick-next:before{
+  color: #f80b0b;
+}
+
 /*-----------------------------
         MEDIA QUERY
 -------------------------------*/
