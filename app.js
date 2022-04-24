@@ -26,6 +26,10 @@ $(document).ready(function () {
   });
 });
 
+$('.main-slider').mouseover(function() {
+  $(this).slick('play')
+});
+
 // SLICK SLIDERs
 
 $(document).ready(function () {
@@ -33,7 +37,7 @@ $(document).ready(function () {
       arrows: true,
       dots: false,
       slidesToShow: 4,
-      autoplay: false,
+      autoplay: true,
       speed: 500,
       autoplaySpeed: 2000,
       responsive: [
@@ -51,4 +55,8 @@ $(document).ready(function () {
         },
       ],
     });
+});
+
+$('.slider').mouseover(function() {
+  $(this).slick('play')
 });
