@@ -60,3 +60,9 @@ $(document).ready(function () {
 $('.slider').mouseover(function() {
   $(this).slick('play')
 });
+
+/*  Loader  */
+
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+});
