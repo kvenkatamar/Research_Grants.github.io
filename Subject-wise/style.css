@@ -9,11 +9,17 @@
     border-radius: 5px;
     width: 40%;
     background-color: #f2f2f2;
+    cursor: pointer;
 }
 
-.grants .grant #checkbtn{
+.grants .grant .fa-angle-down{
+    float: right;
+}
+
+.grants .grant .fa-angle-up{
     float: right;
     cursor: pointer;
+    display: none;
 }
 
 .grants .info{
@@ -21,4 +27,23 @@
     background-color: #ffff;
     margin-top: -30px;
     display: none;
+}
+
+.grants .info .read-more{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: pink;
+}
+
+.grants .info .read-more a{
+    text-decoration: none;
+    color: black;
+}
+
+.grants .info .read-more a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: inherit;
 }
