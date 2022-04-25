@@ -10,3 +10,15 @@
     width: 40%;
     background-color: #f2f2f2;
 }
+
+.grants .grant #checkbtn{
+    float: right;
+    cursor: pointer;
+}
+
+.grants .info{
+    border: none;
+    background-color: #ffff;
+    margin-top: -30px;
+    display: none;
+}
