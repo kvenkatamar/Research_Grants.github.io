@@ -351,7 +351,7 @@
   top: 0;
   left: 0;
   background: #0C0404;
-
+  z-index: 20;
 }
 
 .span-container {
