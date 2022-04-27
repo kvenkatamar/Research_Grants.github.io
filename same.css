@@ -340,3 +340,122 @@ h3{
         width: 150px;
     }
 }
+
+
+/*-----------------------------
+          LOADER
+-----------------------------*/
+/* 1.
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #459c98;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+} */
+
+/* 2. Loader */
+.load-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(56, 54, 54);
+  z-index: 8;
+}
+
+.span-container {
+  width: 100px;
+  height: 100px;
+  transform: translate(-50% -50%);
+  position: absolute;
+  top: 42%;
+  left: 45%;
+}
+
+.span {
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  animation: speed 2s infinite ease-in-out;
+}
+
+.one {
+  background: #c9ba12;
+  animation-delay: 1.5s;
+}
+
+.two {
+  background: #a11cc7;
+  animation-delay: 1s;
+}
+
+.three {
+  background: #237ead;
+  animation-delay: 0.5s;
+}
+
+.four {
+  background: #e0bcbc;
+}
+
+@keyframes speed {
+  0% {
+    transform: translate(0%);
+    border-radius: 50%;
+  }
+
+  25% {
+    transform: translate(150%) scale(0.5);
+    border-radius: 0%;
+  }
+
+  50% {
+    transform: translate(150%, 150%);
+    border-radius: 50%;
+  }
+
+  75% {
+    transform: translate(0, 150%) scale(0.5);
+    border-radius: 0%;
+  }
+}
