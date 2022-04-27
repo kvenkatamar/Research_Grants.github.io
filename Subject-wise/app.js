@@ -148,3 +148,9 @@ function displayInfo10(){
         uncheck.style.display = "none";
     }
 }
+
+/*  Loader  */
+
+$(window).on("load",function(){
+  $(".load-container").fadeOut("slow");
+});
