@@ -1,0 +1,63 @@
+.add-grant{
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 8px;
+}
+
+.add-grant li{
+    padding: 20px;
+}
+
+.add-grant .required{
+    color: red;
+}
+
+.add-grant label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.add-grant input, select{
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.add-grant textarea{
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.add-grant input[type=submit]{
+    width: 100px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.add-grant .cancel{
+    background-color: red;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-grant .save{
+    background-color: green;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 480px;
+    cursor: pointer;
+}
