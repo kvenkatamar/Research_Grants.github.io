@@ -63,6 +63,52 @@
     <main>
         <section>
             <h1>Add a new Research Grant</h1>
+            <form action="">
+                <ul class="add-grant">
+                    <li>
+                        <label for="name">Name of the Grant<span class="required">*</span></label>
+                        <input type="text" placeholder="Enter the name of the Grant" class="name" required>
+                    </li>
+                    <li>
+                        <label for="location">Location<span class="required">*</span></label>
+                        <select type="dropdown">
+                            <option name="country" id="">Location</option>
+                            <option name="country" id="">India</option>
+                            <option name="country" id="">England</option>
+                            <option name="country" id="">USA</option>
+                            <option name="country" id="">Australia</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="institutes">Institutes Offering<span class="required">*</span></label>
+                        <textarea type="text" placeholder="Enter Institutes which are offering this Grant" class="name" required></textarea>
+                    </li>
+                    <li>
+                        <label for="criteria">Criteria of selection<span class="required">*</span></label>
+                        <textarea type="text" placeholder="Enter the Criteria of selection" class="name" required></textarea>
+                    </li>
+                    <li>
+                        <label for="norms">Norms and Stipulations</label>
+                        <textarea type="text" placeholder="Enter the Norms and Stipulations" class="name" required></textarea>
+                    </li>
+                    <li>
+                        <label for="time">Time Period</label>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <label for="last-date">Last Date</label>
+                        <input type="date">
+                    </li>
+                    <li>
+                        <label for="website-link">Official Website Link<span class="required">*</span></label>
+                        <input type="url" required>
+                    </li>
+                    <li>
+                        <input type="submit" value="CANCEL" class="cancel">
+                        <input type="submit" value="SAVE" class="save">
+                    </li>
+                </ul>
+            </form>
         </section>
     </main>
 
