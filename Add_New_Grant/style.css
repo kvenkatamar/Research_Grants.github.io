@@ -23,7 +23,7 @@
 }
 
 .add-grant input, select{
-    width: 50%;
+    width: 760px;
     height: 40px;
     padding: 10px;
     border: 1px solid grey;
@@ -31,7 +31,7 @@
 }
 
 .add-grant textarea{
-    width: 50%;
+    width: 760px;
     height: 200px;
     padding: 10px;
     border: 1px solid grey;
@@ -64,5 +64,6 @@
 }
 
 .add-grant .buttons{
-    width: 46.1%;
+    width: 760px;
+    padding: 0px;
 }

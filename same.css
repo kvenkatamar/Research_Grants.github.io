@@ -256,7 +256,7 @@ h3{
     .navbar ul li a{
         padding: 5px 5px;
     }    
-    input[type=text]{
+    .navbar ul li input[type=text]{
         width: 200px;
     }
 }
@@ -336,7 +336,7 @@ h3{
         width: 20px;
     }
 
-    input[type=text] {
+    .navbar ul li input[type=text] {
         width: 150px;
     }
 }
