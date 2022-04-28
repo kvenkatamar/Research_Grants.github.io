@@ -7,6 +7,7 @@
 
 .add-grant li{
     padding: 20px;
+    width: 90%;
 }
 
 .add-grant .required{
@@ -58,6 +59,10 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     font-weight: bold;
-    margin-left: 480px;
     cursor: pointer;
+    float: right;
+}
+
+.add-grant .buttons{
+    width: 46.1%;
 }
