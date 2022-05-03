@@ -12,7 +12,7 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
 }
 
-nav{
+.navbar{
     background-color: #459c98;
     height: 60px;
     width: 100%;
@@ -41,7 +41,7 @@ h1{
     height: 40px;
 }
 
-nav ul{
+.navbar ul{
     float: right;
     margin-right: 20px;
 }
@@ -74,7 +74,7 @@ nav ul li a.active, a:hover{
     font-size: 30px;
     line-height: 60px;
     color: white;
-    margin-right: 40px;
+    margin-right: 10px;
     cursor: pointer;
     display: none;
     position: absolute;
