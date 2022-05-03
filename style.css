@@ -299,8 +299,20 @@
         MEDIA QUERY
 -------------------------------*/
 
-@media (max-width: 767px) {
+@media (min-width: 2000px) {
+  .slider__item img{
+    height: 800px;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
+  .slider__item img{
+    height: 400px;
+  }
+}
+
+@media (max-width: 550px) {
+  .slider__item img{
+    height: 300px;
+  }
 }
