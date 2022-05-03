@@ -36,21 +36,39 @@ $(document).ready(function () {
     $(".slider").slick({
       arrows: true,
       dots: false,
-      slidesToShow: 4,
+      slidesToShow: 5,
       autoplay: true,
       speed: 500,
       autoplaySpeed: 2000,
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 2000,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
           },
         },
         {
-          breakpoint: 550,
+          breakpoint: 1500,
+          settings: {
+            slidesToShow: 3,
+          },
+        },{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            arrows: false,
+          },
+        },{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            arrows: false,
+          },
+        },{
+          breakpoint: 480,
           settings: {
             slidesToShow: 1,
+            arrows: false,
           },
         },
       ],
