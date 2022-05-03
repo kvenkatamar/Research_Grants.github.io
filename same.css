@@ -17,6 +17,7 @@ nav{
     height: 60px;
     width: 100%;
     text-decoration: none;
+    z-index: 6;
 }
 
 h1{
@@ -25,13 +26,19 @@ h1{
 
 .logo{
     color: white;
-    font-size: 35px;
     font-weight: bold;
     line-height: 60px;
     padding: 0 25px;
     position: absolute;
     z-index: 6;
     text-decoration: none;
+}
+
+.logo img{
+    position: absolute;
+    top: 10px; 
+    width: 200px;
+    height: 40px;
 }
 
 nav ul{
@@ -242,20 +249,37 @@ h3{
         MEDIA QUERY
 --------------------------- */
  
-@media (max-width: 1330px){
+@media (max-width: 1450px){
     .logo{
-        font-size: 30px;
-        padding: 0px 10px;
+        padding: 7px 13px;
     }
     .navbar ul li a{
-        font-size: 12px;
+        font-size: 15px;
+        padding: 7px 13px;
     }
     .navbar ul li{
         margin: 0px 2px;
+    }   
+    .navbar ul li input[type=text]{
+        width: 200px;
+    }
+}
+
+@media (max-width: 1200px){
+    .logo{
+        padding: 0px 10px;
     }
     .navbar ul li a{
-        padding: 5px 5px;
-    }    
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+    .navbar ul li{
+        margin: 0px;
+    }
+    .logo img{
+        width: 150px;
+        height: 40px;
+    }
     .navbar ul li input[type=text]{
         width: 200px;
     }
