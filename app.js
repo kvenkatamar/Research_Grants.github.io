@@ -1,3 +1,22 @@
+// CUSTOM CURSOR
+
+const cursor = document.querySelector(".cursor");
+const follow_cursor = document.querySelector(".follow_cursor");
+
+document.addEventListener("mousemove", e => {
+  cursor.setAttribute("style", "top: "+(e.pageY+5)+"px; left: "+(e.pageX+5)+"px");
+  follow_cursor.setAttribute("style", "top: "+(e.pageY)+"px; left: "+(e.pageX)+"px");
+})
+
+document.addEventListener('click', () => {
+  cursor.classList.add("expand");
+
+  setTimeout(() => {
+      cursor.classList.remove("expand");
+  }, 500)
+})
+
+
 // ----------------------------Script to Implement SLICK SLIDER------------------------------
 // MAIN SLICK SLIDER
 
